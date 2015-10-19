@@ -1,6 +1,6 @@
 # Email API Client
 
-[![Build Status](https://travis-ci.org/UKHomeOffice/email-api-client-java.svg?branch=master)](https://travis-ci.org/UKHomeOffice/email-api-client-java)
+[![Build Status](https://travis-ci.org/UKHomeOffice/email-api-client-java.svg?branch=master)](https://travis-ci.org/UKHomeOffice/email-api-client-java) [![Maven Release](https://img.shields.io/github/release/UKHomeOffice/email-api-client.svg?label=maven)](https://jitpack.io/#UKHomeOffice/email-api-client) [![Gradle Release](https://img.shields.io/github/release/UKHomeOffice/email-api-client.svg?label=gradle)](https://jitpack.io/#UKHomeOffice/email-api-client) [![SBT Release](https://img.shields.io/github/release/UKHomeOffice/email-api-client.svg?label=sbt)](https://jitpack.io/#UKHomeOffice/email-api-client)
 
 This is a client for the [Email API](https://github.com/UKHomeOffice/email-api)
 
