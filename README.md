@@ -25,7 +25,7 @@ Add JetPack as a repository
 
 ```gradle
     dependencies {
-            compile 'com.github.UKHomeOffice:email-api-client:v0.1.0'
+            compile 'com.github.UKHomeOffice:email-api-client:v0.1.2'
     }
 ```
 
@@ -42,7 +42,7 @@ Add JetPack as a repository
     <dependency>
         <groupId>com.github.UKHomeOffice</groupId>
         <artifactId>email-api-client</artifactId>
-        <version>v0.1.0</version>
+        <version>v0.1.2</version>
     </dependency>
 ```
 
