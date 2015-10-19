@@ -1,5 +1,11 @@
 group = 'uk.gov.homeoffice.emailapi'
-version = '1.0.0'
+version = '0.1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
 
 buildscript {
     repositories {
