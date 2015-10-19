@@ -49,6 +49,8 @@ Add JetPack as a repository
 ### Using it
 
 ```java
+import io.swagger.client.ApiClient;
+import io.swagger.client.model.TemplatedEmail;
 import uk.gov.homeoffice.emailapi.client;
 ```
 
