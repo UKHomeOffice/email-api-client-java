@@ -1,17 +1,13 @@
 package io.swagger.client;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2015-10-19T15:11:18.643+01:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2015-10-20T12:03:14.150+01:00")
 public class Pair {
     private String name = "";
     private String value = "";
 
-    public Pair(String name, String value) {
+    public Pair (String name, String value) {
         setName(name);
         setValue(value);
-    }
-
-    public String getName() {
-        return this.name;
     }
 
     private void setName(String name) {
@@ -20,14 +16,18 @@ public class Pair {
         this.name = name;
     }
 
-    public String getValue() {
-        return this.value;
-    }
-
     private void setValue(String value) {
         if (!isValidString(value)) return;
 
         this.value = value;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getValue() {
+        return this.value;
     }
 
     private boolean isValidString(String arg) {
