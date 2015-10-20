@@ -1,6 +1,6 @@
 # Email API Client
 
-[![Build Status](https://travis-ci.org/UKHomeOffice/email-api-client-java.svg?branch=master)](https://travis-ci.org/UKHomeOffice/email-api-client-java)
+[![GitHub version](https://badge.fury.io/gh/ukhomeoffice%2Femail-api-client-java.svg)](https://badge.fury.io/gh/ukhomeoffice%2Femail-api-client-java) [![Build Status](https://travis-ci.org/UKHomeOffice/email-api-client-java.svg?branch=master)](https://travis-ci.org/UKHomeOffice/email-api-client-java)
 
 This is a client for the [Email API](https://github.com/UKHomeOffice/email-api)
 
