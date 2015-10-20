@@ -82,11 +82,11 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
-[tags on this repository](https://github.com/UKHomeOffice/email-api/tags). 
+[tags on this repository](https://github.com/UKHomeOffice/email-api-client-java/tags). 
 
 ## Authors
 
-See also the list of [contributors](https://github.com/UKHomeOffice/email-api/contributors) who 
+See the list of [contributors](https://github.com/UKHomeOffice/email-api-client-java/contributors) who 
 participated in this project.
 
 ## License
