@@ -14,15 +14,41 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Enough information to populate and send and email based on a template
  **/
 @ApiModel(description = "Enough information to populate and send and email based on a template")
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2015-10-20T12:03:14.150+01:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2015-10-23T12:01:47.061+01:00")
 public class TemplatedEmail   {
   
+  private String sender = null;
+  private String subject = null;
   private String htmlTemplate = null;
   private String textTemplate = null;
   private Map<String, Object> variables = new HashMap<String, Object>();
   private List<String> recipients = new ArrayList<String>();
-  private String sender = null;
-  private String subject = null;
+
+  
+  /**
+   * Sender of the email in format \"example@example.org\" or \"Annie Example <annie@example.com>\"
+   **/
+  @ApiModelProperty(required = true, value = "Sender of the email in format \"example@example.org\" or \"Annie Example <annie@example.com>\"")
+  @JsonProperty("sender")
+  public String getSender() {
+    return sender;
+  }
+  public void setSender(String sender) {
+    this.sender = sender;
+  }
+
+  
+  /**
+   * Subject of the email
+   **/
+  @ApiModelProperty(required = true, value = "Subject of the email")
+  @JsonProperty("subject")
+  public String getSubject() {
+    return subject;
+  }
+  public void setSubject(String subject) {
+    this.subject = subject;
+  }
 
   
   /**
@@ -77,44 +103,18 @@ public class TemplatedEmail   {
   }
 
   
-  /**
-   * Sender of the email in format \"example@example.org\" or \"Annie Example <annie@example.com>\"
-   **/
-  @ApiModelProperty(required = true, value = "Sender of the email in format \"example@example.org\" or \"Annie Example <annie@example.com>\"")
-  @JsonProperty("sender")
-  public String getSender() {
-    return sender;
-  }
-  public void setSender(String sender) {
-    this.sender = sender;
-  }
-
-  
-  /**
-   * Subject of the email
-   **/
-  @ApiModelProperty(required = true, value = "Subject of the email")
-  @JsonProperty("subject")
-  public String getSubject() {
-    return subject;
-  }
-  public void setSubject(String subject) {
-    this.subject = subject;
-  }
-
-  
 
   @Override
   public String toString()  {
     StringBuilder sb = new StringBuilder();
     sb.append("class TemplatedEmail {\n");
     
+    sb.append("    sender: ").append(StringUtil.toIndentedString(sender)).append("\n");
+    sb.append("    subject: ").append(StringUtil.toIndentedString(subject)).append("\n");
     sb.append("    htmlTemplate: ").append(StringUtil.toIndentedString(htmlTemplate)).append("\n");
     sb.append("    textTemplate: ").append(StringUtil.toIndentedString(textTemplate)).append("\n");
     sb.append("    variables: ").append(StringUtil.toIndentedString(variables)).append("\n");
     sb.append("    recipients: ").append(StringUtil.toIndentedString(recipients)).append("\n");
-    sb.append("    sender: ").append(StringUtil.toIndentedString(sender)).append("\n");
-    sb.append("    subject: ").append(StringUtil.toIndentedString(subject)).append("\n");
     sb.append("}");
     return sb.toString();
   }

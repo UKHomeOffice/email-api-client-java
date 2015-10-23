@@ -10,7 +10,7 @@ import io.swagger.client.model.TemplatedEmail;
 
 import java.util.*;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2015-10-20T12:03:14.150+01:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2015-10-23T12:01:47.061+01:00")
 public class OutboundApi {
   private ApiClient apiClient;
 
@@ -39,7 +39,6 @@ public class OutboundApi {
    */
   public void sendEmail (TemplatedEmail body) throws ApiException {
     Object postBody = body;
-    byte[] postBinaryBody = null;
     
     // create path and map variables
     String path = "/outbound".replaceAll("\\{format\\}","json");
@@ -68,14 +67,8 @@ public class OutboundApi {
     String[] authNames = new String[] {  };
 
     
-
+    apiClient.invokeAPI(path, "POST", queryParams, postBody, headerParams, formParams, accept, contentType, authNames, null);
     
-    
-    apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, null);
-    
-    
-
-
   }
   
 }
