@@ -8,6 +8,20 @@ This is a client for the [Email API](https://github.com/UKHomeOffice/email-api)
 
 This documents how to get started using Maven or Gradle.
 
+This repository is generated using [swagger-codegen](https://github.com/swagger-api/swagger-codegen). The command used is as follows:
+
+```shell
+java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate   \
+    -i http://localhost:8080/swagger.json \
+    -l java \
+    --library jersey2 \
+    --group-id uk.gov.homeoffice.emailapi \
+    --artifact-id email-api-client \
+    --api-package uk.gov.homeoffice.emailapi.client \
+    --artifact-version v2.0.0  \
+    -o ../email-api-client/ 
+```
+
 ### Adding to your project
 
 #### Gradle
@@ -25,7 +39,7 @@ Add JetPack as a repository
 
 ```gradle
     dependencies {
-            compile 'com.github.UKHomeOffice:email-api-client:v0.1.3'
+            compile 'com.github.UKHomeOffice:email-api-client:v2.0.0'
     }
 ```
 
@@ -42,7 +56,7 @@ Add JetPack as a repository
     <dependency>
         <groupId>com.github.UKHomeOffice</groupId>
         <artifactId>email-api-client</artifactId>
-        <version>v0.1.3</version>
+        <version>v2.0.0</version>
     </dependency>
 ```
 
@@ -81,7 +95,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
+The version of this repository tracks the [Email API](https://github.com/UKHomeOffice/email-api). For the versions available, see the 
 [tags on this repository](https://github.com/UKHomeOffice/email-api-client-java/tags). 
 
 ## Authors
